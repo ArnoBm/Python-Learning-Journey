@@ -1,0 +1,5 @@
+print('Hello Word', "Hi, I am Arnob Mustakim")
+print (1+5)
+print (7*3)
+print ()
+print ("hello world", "this is a string", "and this is another string", 18)
