@@ -3,7 +3,10 @@ name = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Heidi", "I
 name_to_find = "Heidi"
 found_at = None
 
-for index in range(len(name)):
-    if name[index] == name_to_find:
-        found_at = index
-print (f"{name_to_find} is found at index {found_at}")
+if name_to_find in name:
+    found_at = name.index(name_to_find)
+
+if found_at is not None:
+    print(f"{name_to_find} found at index {found_at}")
+else:
+    print(f"{name_to_find} not found in the list")
