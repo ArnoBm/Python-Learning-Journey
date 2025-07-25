@@ -23,3 +23,9 @@ print(values_list)
 for index in range(len(values_list)):
     values_list[index] = int(values_list[index])
 print(values_list)
+
+#create a new ist
+interger_values = []
+for value in values_list:
+    interger_values.append(int(value))
+print(interger_values)
