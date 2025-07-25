@@ -19,3 +19,7 @@ print(values)
 
 values_list = values.split()
 print(values_list)
+
+for index in range(len(values_list)):
+    values_list[index] = int(values_list[index])
+print(values_list)
