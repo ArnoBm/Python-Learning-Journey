@@ -36,6 +36,30 @@ albums = [
 
 for name, artist, year, songs in albums:
     print(f"Album: {name} by {artist} ({year})")
-    for track_number, track_name in songs:
-        print(f"  Track {track_number}: {track_name}")
+    for song_number, song_name in songs:
+        print(f"  Track {song_number}: {song_name}")
     print()  # Print a blank line for better readability
+
+print("-" * 30)
+
+print()
+
+# album = albums[3] # Accessing the fourth album
+# print(album) # Output: ('More Mayhem', 'Imelda May', 2011, [(1, 'Pulling the Rug'), (2, 'Psycho'), (3, 'Mayhem'), (4, 'Kentish Town Waltz')])
+#
+# songs = album[3]  # Accessing the list of songs in the fourth album
+# print(songs)  # Output: [(1, 'Pulling the Rug'), (2, 'Psycho'), (3, 'Mayhem'), (4, 'Kentish Town Waltz')]
+#
+# song = songs[1] # Accessing the second song in the fourth album
+# print(song)  # Output: (2, 'Psycho')
+# print(song[1])  # Output: 'Psycho'
+#
+# mayhem = albums[3][3][2][1] # Accessing the name of the third song in the fourth album
+# print(mayhem)  # Output: 'Mayhem'
+#
+# print(albums[3]) # Output: ('More Mayhem', 'Imelda May', 2011, [(1, 'Pulling the Rug'), (2, 'Psycho'), (3, 'Mayhem'), (4, 'Kentish Town Waltz')])
+
+print(albums[1][3][5][1])  # Output: 'The Way I Choose'
+print(albums[2][2]) # Output: 1981
+print(albums[0][3][3][0]) # Output: 4
+print(albums[2][3][1])  # Output: '(2, 'Keeping a Rendezvous')'
